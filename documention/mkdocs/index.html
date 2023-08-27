@@ -481,7 +481,8 @@
 <h2 id="installation">Installation</h2>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs
 </span></code></pre></div>
-<p>I don't bother with anything else as I always use a docker container for MkDocs. (You must install the pythom modules used in the container to use the gh-deploy command.)</p>
+<p>I don't bother with anything else as I always use a docker container for MkDocs.</p>
+<p>Note: If you are using <code>mkdocs gh-deploy</code> you will need to install the "ADD_MODULES" locally as well to get gh-deploy to work.</p>
 <h2 id="docker-compose">Docker Compose</h2>
 <div class="language-yaml highlight"><span class="filename">docker-compose.yml</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.9&#39;</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nt">services</span><span class="p">:</span>
