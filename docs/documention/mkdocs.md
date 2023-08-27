@@ -12,7 +12,9 @@
 pip install mkdocs
 ```
 
-I don't bother with anything else as I alwasy use a docker container for MkDocs.
+I don't bother with anything else as I always use a docker container for MkDocs.
+
+Note: If you are using `mkdocs gh-deploy` you will need to install the "ADD_MODULES" locally as well to get gh-deploy to work.
 
 ## Docker Compose
 
@@ -75,3 +77,13 @@ markdown_extensions:
 ```
 
 This file has Light and Dark mode support as well as Mermaid support. It also has code highlighting support. and Copy and Select support for code blocks.
+
+
+## Deploying to GitHub Pages
+
+```bash
+mkdocs gh-deploy
+```
+
+This command will create a special branch gh-pages a
+nd push the site to it. You can then go to the settings for the repo and set the GitHub Pages source to the gh-pages branch.
