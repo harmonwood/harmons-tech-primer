@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  primer:
+    image: polinux/mkdocs
+    environment:
+      LIVE_RELOAD_SUPPORT: 'true'
+      ADD_MODULES: 'mkdocs-git-revision-date-localized-plugin mkdocs-material pymdown-extensions pygments'
+      FAST_MODE: 'true'
+      DOCS_DIRECTORY: '/mkdocs'
+      UPDATE_INTERVAL: 15
+      AUTO_UPDATE: 'true'
+    ports:
+      - 8000:8000
+    volumes:
+      - ./:/mkdocs
