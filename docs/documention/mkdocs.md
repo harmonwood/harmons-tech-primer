@@ -68,6 +68,8 @@ markdown_extensions:
       auto_title: false
       line_spans: __span
       pygments_lang_class: true
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
