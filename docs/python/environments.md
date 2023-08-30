@@ -9,13 +9,13 @@ https://mamba.readthedocs.io/en/latest/micromamba-installation.html
 ## Create env
 
 ```sh
-micromamba create -n my-first-jupyter -f environment.yml
+micromamba create -n <env-name> -f environment.yml
 ```
 
 ## Run Env
 
 ```sh
-mircomamba activate my-first-jupyter
+mircomamba activate <env-name>
 ```
 
 ## Add package
@@ -59,3 +59,10 @@ chpwd_functions+=("auto_activate_micromamba_env")
 # Activate the environment when spawning a new shell
 auto_activate_micromamba_env
 ```
+
+???+ note
+    Python 2.7.18 install on an M2 Mac (osx-arm64) with micromamba
+
+    ```sh
+    micromamba create -n py27 python=2.7.18 -c http://repo.continuum.io/pkgs/main/osx-arm64
+    ```

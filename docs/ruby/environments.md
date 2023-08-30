@@ -35,7 +35,7 @@ export PATH="/Users/<home>/.rubies/ruby-<version>/bin:$PATH"
 
 Create a .ruby-version file in the root of your project and add the version you want to use.
 
-chruby will now automaticly switch to the version in the .ruby-version file when you enter the directory.
+chruby will now automatically switch to the version in the .ruby-version file when you enter the directory.
 
 ```sh
 echo "ruby-3.2.2" > .ruby-version
