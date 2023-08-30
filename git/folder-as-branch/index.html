@@ -439,6 +439,33 @@
     Populating and publishing the branch
   </a>
   
+    <nav class="md-nav" aria-label="Populating and publishing the branch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-the-folder-is-checked-into-the-repo" class="md-nav__link">
+    If the folder is checked into the repo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-the-folder-is-git-ignored" class="md-nav__link">
+    If the folder is git ignored
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-forget-to-commit-and-push" class="md-nav__link">
+    Don't forget to commit and push
+  </a>
+  
 </li>
       
     </ul>
@@ -718,6 +745,33 @@
     Populating and publishing the branch
   </a>
   
+    <nav class="md-nav" aria-label="Populating and publishing the branch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-the-folder-is-checked-into-the-repo" class="md-nav__link">
+    If the folder is checked into the repo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-the-folder-is-git-ignored" class="md-nav__link">
+    If the folder is git ignored
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-forget-to-commit-and-push" class="md-nav__link">
+    Don't forget to commit and push
+  </a>
+  
 </li>
       
     </ul>
@@ -746,10 +800,19 @@
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git<span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span>.
 </span></code></pre></div>
 <h2 id="populating-and-publishing-the-branch">Populating and publishing the branch</h2>
+<h3 id="if-the-folder-is-checked-into-the-repo">If the folder is checked into the repo</h3>
 <div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>main<span class="w"> </span>--<span class="w"> </span>folder_name
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>git<span class="w"> </span>add<span class="w"> </span>.
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Publishing to branch_name&quot;</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>branch_name
+</span></code></pre></div>
+<h3 id="if-the-folder-is-git-ignored">If the folder is git ignored</h3>
+<p>After removing all the files with <code>git rm -rf .</code> The folder will still have the ignored files and folders in it. Remove all that are not the one you want to publish. Then unpack the folder by coping it's contents into the root of the repo.</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>rm<span class="w"> </span>random_file_in_gitignore
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>cp<span class="w"> </span>-r<span class="w"> </span>folder_name/*<span class="w"> </span>.
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>rm<span class="w"> </span>-rf<span class="w"> </span>folder_name
+</span></code></pre></div>
+<h2 id="dont-forget-to-commit-and-push">Don't forget to commit and push</h2>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>add<span class="w"> </span>.
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Publishing to branch_name&quot;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>branch_name
 </span></code></pre></div>
 
 
