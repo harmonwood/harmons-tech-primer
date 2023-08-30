@@ -8,7 +8,7 @@ Docasourus is a close second.
 
 When it comes to diagrams there is no one size fits all... Yet.
 
-???+ note
+???+ TLDR
     As much as Mermaid fits all of my philosophy points it's just not ready for prime time. So I seattle for a combination of structurizr and Diagrams.net.
 
 ### Diagram Philosophy
@@ -17,7 +17,7 @@ I am a believer in diagrams as code. In a programming environment with many deve
 
 1. There is no need to hunt down original diagrams to modify, or install/learn a new program. Vi/Emacs will do just fine ;)
 
-2. A simple pull request will allow for developers with more domain knowledge to accurately proof these changes. This makes proposing documentation changes to diagrams zero risk.
+2. A simple pull request will allow for developers with more domain knowledge to accurately and easily proof these changes. This makes proposing documentation and diagrams changes zero risk.
 
 ### C4 Architecture Model (Structurizr)
 
@@ -44,4 +44,4 @@ Structurizr support is limited and artifacts are to small to ready comfortably.
 
 Site: [diagrams.net](https://app.diagrams.net)
 
-It can be pretty and you can imbed the original diagram in a PNG file so that there is no need to hunt for the original file. The artifact is both the image and the original.
+It can be pretty and you can embed the original diagram in a PNG file so that there is no need to hunt for the original file. The artifact is both the image and the original.
