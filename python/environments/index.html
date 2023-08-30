@@ -796,10 +796,10 @@
 <p>Currently only in micromamba I will add tabs as needed.</p>
 <p>https://mamba.readthedocs.io/en/latest/micromamba-installation.html</p>
 <h2 id="create-env">Create env</h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>micromamba<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>my-first-jupyter<span class="w"> </span>-f<span class="w"> </span>environment.yml
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>micromamba<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>&lt;env-name&gt;<span class="w"> </span>-f<span class="w"> </span>environment.yml
 </span></code></pre></div>
 <h2 id="run-env">Run Env</h2>
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mircomamba<span class="w"> </span>activate<span class="w"> </span>my-first-jupyter
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mircomamba<span class="w"> </span>activate<span class="w"> </span>&lt;env-name&gt;
 </span></code></pre></div>
 <h2 id="add-package">Add package</h2>
 <div class="language-sh highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>micromamba<span class="w"> </span>install<span class="w"> </span>&lt;package-name&gt;
@@ -833,6 +833,12 @@
 </span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="c1"># Activate the environment when spawning a new shell</span>
 </span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>auto_activate_micromamba_env
 </span></code></pre></div>
+<details class="note" open="open">
+<summary>Note</summary>
+<p>Python 2.7.18 install on an M2 Mac (osx-arm64) with micromamba</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>micromamba<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>py27<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">2</span>.7.18<span class="w"> </span>-c<span class="w"> </span>http://repo.continuum.io/pkgs/main/osx-arm64
+</span></code></pre></div>
+</details>
 
 
 
