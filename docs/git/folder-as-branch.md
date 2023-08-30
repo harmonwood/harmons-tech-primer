@@ -39,3 +39,6 @@ git add .
 git commit -m "Publishing to branch_name"
 git push origin branch_name
 ```
+
+???+ note
+    If you are deploying to gh-pages with a custom domain you will need a `CNAME` file in the root of this directory. You can create it with `echo "domain.com" > CNAME` and then commit and push it. Make sure you copy it over every time you publish.
