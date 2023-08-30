@@ -38,7 +38,7 @@ Create a .ruby-version file in the root of your project and add the version you 
 chruby will now automaticly switch to the version in the .ruby-version file when you enter the directory.
 
 ```sh
-echo "ruby-2.7.4" > .ruby-version
+echo "ruby-3.2.2" > .ruby-version
 ```
 
 ## Install bundler

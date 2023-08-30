@@ -16,8 +16,25 @@ git rm -rf .
 
 ## Populating and publishing the branch
 
+### If the folder is checked into the repo
+
 ```sh
 git checkout main -- folder_name
+```
+
+### If the folder is git ignored
+
+After removing all the files with `git rm -rf .` The folder will still have the ignored files and folders in it. Remove all that are not the one you want to publish. Then unpack the folder by coping it's contents into the root of the repo.
+
+```sh
+rm random_file_in_gitignore
+cp -r folder_name/* .
+rm -rf folder_name
+```
+
+## Don't forget to commit and push
+
+```sh
 git add .
 git commit -m "Publishing to branch_name"
 git push origin branch_name
